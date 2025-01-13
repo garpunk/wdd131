@@ -1,0 +1,16 @@
+body {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.brand > span{
+    font-size: 4.0rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+}
+
