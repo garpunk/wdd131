@@ -1,16 +1,28 @@
 body {
-    font-size: 1.2em;
-    font-family: sans-serif;
-    font-weight: bold;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
-.brand > span{
-    font-size: 4.0rem;
+.brand > span {
+  font-size: 4rem;
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+.brand {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  /* or you can do grid-template-columns: 60px auto; */
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
