@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Garrett Helms" />
     <meta name="description" content="a website with really cool pics" />
+
     <link rel="stylesheet" href="coolpics.css" />
     <script src="coolpics.js" defer></script>
     <title>Cool Pics 📷</title>
   </head>
   <body>
+    
+    <div class="top-color">
     <header>Cool Pics 📷</header>
     <main>
-      <nav>
+      <button class="menu-button">Menu</button>
+      <nav class="hide">
         <a href="#">Home</a>
         <a href="#">People</a>
         <a href="#">Places</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </nav>
+    </div>
 
+      <h2>Current Work</h2>
       <section class="gallery">
         <figure>
-          <img src="images/norris-full.jpeg" alt="pictures" />
+          <img src="norris-sm.jpeg" class="small-img" alt="" />
         </figure>
         <figure>
-          <img src="images/norris-sm.jpeg" alt="" />
+          <img src="norris-sm.jpeg" class="small-img" alt="" />
         </figure>
       </section>
     </main>
