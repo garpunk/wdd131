@@ -8,10 +8,13 @@ menuButton.addEventListener('click', toggleMenu);
 
 function handleResize() {
   const menu = document.querySelector('nav');
+  const menuButton = document.querySelector('.menu-button');
   if (window.innerWidth > 1000) {
     menu.classList.remove('hide');
+    menuButton.style.display = 'none';
   } else {
     menu.classList.add('hide');
+    menuButton.style.display = 'block';
   }
 }
 

@@ -13,12 +13,18 @@ body {
   font-family: var(--primary-font);
   font-size: 1.2em;
   display: grid;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 a:link,
 a:visited {
   color: var(--accent-color);
 }
 .top-color {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   background-color: var(--primary-color);
 }
 
@@ -39,8 +45,13 @@ a:visited {
 
 .close-viewer {
   all: unset;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   color: var(--text-light);
   font-size: 2rem;
+  cursor: pointer;
+  z-index: 20;
 }
 img {
   max-width: 100%;
@@ -88,8 +99,8 @@ h2 {
   display: grid;
 }
 .small-img {
-  display: block;
   margin: 0 auto;
+  display: block;
   height: 250px;
   width: 250px;
   object-fit: cover;
@@ -115,7 +126,7 @@ footer {
   }
 
   .gallery {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .viewer {
     padding: 5%;
