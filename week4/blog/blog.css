@@ -1,0 +1,30 @@
+@import 'path/to/normalize.css';
+
+header {
+  text-align: center;
+}
+
+nav {
+  text-align: right;
+  padding-right: 10%;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-color: gold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hide {
+  display: none;
+}
+
+.main-header {
+  text-align: center;
+}
+.main-image {
+  display: block;
+  align-items: center;
+}
