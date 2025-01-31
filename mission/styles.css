@@ -13,8 +13,8 @@ body {
   color: #ffffff;
 }
 
-.dark h2 {
-  color: A0D4ED;
+.dark .subtitle {
+  color: lightblue;
 }
 .title {
   text-align: center;
