@@ -77,14 +77,12 @@ main {
   margin: 0 auto;
 }
 
-/* Articles list container */
 .articles-list-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Article container */
 .article-container {
   display: flex;
   gap: 20px;
@@ -92,7 +90,6 @@ main {
   padding-bottom: 20px;
 }
 
-/* Left column (ages, genre, rating) */
 .left-column {
   width: 200px;
   display: flex;
@@ -101,7 +98,6 @@ main {
   padding-bottom: 250%;
 }
 
-/* Middle column (title, image, description) */
 .middle-column {
   flex-grow: 1;
   display: flex;
