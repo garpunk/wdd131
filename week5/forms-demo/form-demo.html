@@ -1,0 +1,60 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html" method="get">
+        <!--labels are a big deal for accessibility, allows access to forms without mouse-->
+
+        <fieldset>
+          <p>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" />
+          </p>
+        </fieldset>
+        <fieldset class="paymentForm">
+          <p>
+            <label for="payment">Payment Method:</label>
+            <input type="text" id="payment" name="payment" />
+          </p>
+          <p id="creditCard">
+            <label for="credit-card">Credit Card Number:</label>
+            <input
+              type="text"
+              id="credit-card"
+              name="credit-card"
+              pattern="[0-9] {16}"
+              required
+            />
+          </p>
+          <p class="hide" id="payPal">
+            <label for="paypal">Paypal Username:</label>
+            <input type="text" id="paypal" name="paypal" />
+          </p>
+        </fieldset>
+        <p>
+          <label for="newsletter">Sign up for newsletter</label>
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          <button>Submit</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
