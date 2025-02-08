@@ -81,8 +81,8 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #999;
-  color: White;
+  background-color: white;
+  color: black;
 }
 .colors td {
   width: 25%;
