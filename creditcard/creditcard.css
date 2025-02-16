@@ -35,16 +35,31 @@ div img {
 .line2 label {
   display: block;
 }
+
+#expiration {
+  margin-left: 30px;
+}
 .line3 {
   display: flex;
   margin-right: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-top: 10px;
+}
+
+.line3 div {
+  display: flex;
+  flex-direction: column;
 }
 .expiration {
   display: flex;
   justify-content: space-between;
   margin-right: 0px;
+  margin-left: 30px;
+}
+
+.expiration div {
+  display: flex;
+  flex-direction: row;
 }
 .expiration input {
   width: 40px;

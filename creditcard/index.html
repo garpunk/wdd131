@@ -46,24 +46,30 @@
               />
             </div>
             <div>
-              <label for="expiration">Expiration</label>
+              <label for="expMonth" id="expiration">Expiration</label>
               <div class="expiration">
-                <input
-                  type="text"
-                  name="month"
-                  id="month"
-                  placeholder="MM"
-                  pattern="[0-9]{2}"
-                  required
-                />
-                <input
-                  type="text"
-                  name="year"
-                  id="year"
-                  placeholder="YY"
-                  pattern="[0-9]{2}"
-                  required
-                />
+                <div>
+                  <input
+                    type="text"
+                    name="expMonth"
+                    id="expMonth"
+                    placeholder="MM"
+                    pattern="[0-9]{2}"
+                    min="1"
+                    max="12"
+                    required
+                  />
+                  <label for="expYear"></label>
+                  <input
+                    type="text"
+                    name="expYear"
+                    id="expYear"
+                    placeholder="YY"
+                    pattern="[0-9]{2}"
+                    min="2024"
+                    required
+                  />
+                </div>
               </div>
             </div>
           </div>

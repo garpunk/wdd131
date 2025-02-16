@@ -12,28 +12,32 @@ function displayError(msg) {
 function submitHandler(event) {
   event.preventDefault();
   let errorMsg = '';
-  console.log(this.cardNumber.value);
-
-  // Clear any previous errors
   displayError('');
 
-  // Check credit card number format (should contain only digits)
-  if (!/^\d+$/.test(this.cardNumber.value)) {
-    errorMsg += 'Card number must contain only digits.<br>';
-  } else if (this.cardNumber.value.length !== 16) {
-    errorMsg += 'Card number must be 16 digits long.<br>';
-  } else if (!isCardNumberValid(this.cardNumber.value)) {
-    errorMsg += 'Card number is not valid.<br>';
+  // Get form reference
+  const form = event.target;
+
+  // Card number validation
+  if (isNaN(form.cardNumber.value)) {
+    errorMsg += 'Card number is not a valid number<br>';
+  } else if (!isCardNumberValid(form.cardNumber.value)) {
+    errorMsg += 'Card number is not a valid card number<br>';
+  }
+
+  // Expiry date validation
+  let month = parseInt(form.expMonth.value);
+  let year = parseInt(form.expYear.value);
+  console.log(`Month: ${month}, Year: ${year}`); // Debugging
+
+  if (!isExpiryValid(month, year)) {
+    errorMsg += 'Expiration date must be in the future<br>';
   }
 
   if (errorMsg !== '') {
-    // There was an error, stop the form submission and display the errors.
     displayError(errorMsg);
     return false;
   }
 
-  // Success (you can add a success message or form submission logic here)
-  alert('Card number accepted!');
   return true;
 }
 
