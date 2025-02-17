@@ -52,6 +52,7 @@ if (articlesContainer && asideArticle) {
     const leftColumn = document.createElement('div');
     leftColumn.classList.add('left-column');
     leftColumn.innerHTML = `
+      <p><strong>Date:</strong> ${item.date}</p>
       <p><strong>Ages:</strong> ${item.ages}</p>
       <p><strong>Genre:</strong> ${item.genre}</p>
       <p><strong>Rating:</strong> ${item.stars}</p>
