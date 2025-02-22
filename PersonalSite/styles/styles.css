@@ -96,7 +96,8 @@ nav ul {
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
   display: flex; /* Make items flex */
-  flex-direction: column; /* Ensure horizontal layout */
+  flex-direction: row;
+  justify-content: center; /* Ensure horizontal layout */
   gap: 20px; /* Add spacing between links */
   width: 100%;
 }
