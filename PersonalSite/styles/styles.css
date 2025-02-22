@@ -199,6 +199,10 @@ h3 {
   align-items: center;
 }
 
+.blog-title {
+  color: #0d2c48;
+}
+
 @media (min-width: 768px) {
   .all-blogs {
     flex-direction: row;
