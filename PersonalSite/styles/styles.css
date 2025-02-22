@@ -215,6 +215,27 @@ h3 {
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-plan-link {
+  text-decoration: none;
+  font-size: 1.7rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: #0d2c48;
+  border-style: none;
+  border-radius: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  height: 50px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
 @media (min-width: 790px) {
   nav {
     display: flex;
