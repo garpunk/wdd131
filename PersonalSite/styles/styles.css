@@ -32,25 +32,33 @@ body {
   /*background-color: var(--primary-color); this will be the background color for dark mode*/
 }
 
+/* ----------- Header ----------------*/
 .logo {
-  width: 5%;
+  width: 18%;
   border-radius: 5%;
 }
 
-.settings {
-  font-size: 1.7rem;
-  background-color: var(--secondary-color);
-  border-style: none;
-  border-radius: 5%;
-  padding-left: 1%;
-  padding-right: 1%;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+.top-bar {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.settings:hover {
+#select {
+  appearance: none;
+  font-size: 1.7rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  border-style: none;
+  border-radius: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  height: 50px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+#select:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
@@ -78,12 +86,25 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
+nav ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Make items flex */
+  flex-direction: column; /* Ensure horizontal layout */
+  gap: 20px; /* Add spacing between links */
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block; /* Ensures proper spacing */
+}
+
 nav a {
   padding: 1em;
   min-width: 120px;
@@ -97,4 +118,119 @@ nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+.dark,
+.dark * {
+  background-color: var(--primary-color) !important;
+  color: var(--accent2-color) !important;
+  border-color: white !important;
+}
+
+#hide {
+  display: none;
+}
+
+.all-blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.blog-preview-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #e8e8f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.blog-preview-container:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-img-preview {
+  max-width: 100%;
+}
+.blog-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog-img-2 {
+  border-radius: 10px;
+  float: right;
+  margin-left: 20px; /* Space between image and text */
+  width: 200px;
+}
+.sub-blog-preview {
+  display: flex;
+  flex-direction: column;
+}
+.tag {
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid black;
+  max-width: auto;
+  text-align: center;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+h3 {
+  margin: 15px 0px 0px;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #1b98e0;
+}
+.recipe-description {
+  visibility: hidden;
+}
+
+.all-blogs {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .all-blogs {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .blog-preview-container {
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 50px 20px;
+  }
+}
+
+@media (min-width: 790px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  .logo {
+    width: 10%;
+  }
+
+  .blog-img-2 {
+    border-radius: 10px;
+    float: right;
+    margin-left: 20px; /* Space between image and text */
+    width: 30%;
+  }
 }

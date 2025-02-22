@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="main.js" type="module" defer></script>
+    <script type="module" src="main.js" defer></script>
   </head>
   <body>
     <div class="top-bar">
@@ -18,18 +18,21 @@
       </select>
     </div>
     <header>
-      <nav>
-        <ul>
-          <li><a href="example.html">Memory Palace</a></li>
-          <li><a href="example2.html">History of Memory</a></li>
-          <li><a href="example3.html">Memory Guru's</a></li>
-          <li><a href="example4.html">Memory Studies</a></li>
-        </ul>
-      </nav>
-    </header>
+      <h1>Memory Palace</h1>
 
+      <h2>Here you can learn about memory palaces</h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="example.html">Memory Palace</a></li>
+        <li><a href="example2.html">History of Memory</a></li>
+        <li><a href="example3.html">Memory Guru's</a></li>
+        <li><a href="example4.html">Memory Studies</a></li>
+      </ul>
+    </nav>
     <main>
-      <section class="dynamic-blog-container"></section>
+      <section class="dynamic-blog-preview"></section>
+      <section class="dynamic-blog-container" id="hide"></section>
     </main>
   </body>
 </html>
