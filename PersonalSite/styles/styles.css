@@ -132,6 +132,10 @@ nav a:hover {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 .all-blogs {
   display: flex;
   flex-direction: column;
