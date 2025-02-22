@@ -44,7 +44,7 @@ body {
   justify-content: space-between;
 }
 
-#select {
+.select-style {
   appearance: none;
   font-size: 1.7rem;
   background-color: var(--secondary-color);
@@ -58,11 +58,10 @@ body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-#select:hover {
+.select-style:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-
 h1,
 h2,
 h3,
