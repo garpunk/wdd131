@@ -132,7 +132,8 @@ nav a:hover {
 }
 
 .hide {
-  display: none;
+  position: absolute;
+  left: -9999px;
 }
 
 .all-blogs {
