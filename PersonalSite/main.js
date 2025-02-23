@@ -74,7 +74,8 @@ function renderBlogs(blogList) {
     console.error("Error: Container '.dynamic-blog-preview' not found!");
     return;
   }
-  previewElement.innerHTML = blogPreviewTemplate(blogList[0]); // Show only first post as preview
+  previewElement.innerHTML = blogPreviewTemplate(blogList[0]);
+  // Show only first post as preview
 }
 // creating the function for the blogpost preview
 

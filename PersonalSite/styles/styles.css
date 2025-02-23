@@ -91,18 +91,18 @@ nav {
 }
 
 nav ul {
-  list-style-type: none; /* Remove default bullets */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Make items flex */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   flex-direction: row;
-  justify-content: center; /* Ensure horizontal layout */
-  gap: 20px; /* Add spacing between links */
+  justify-content: center;
+  gap: 20px;
   width: 100%;
 }
 
 nav ul li {
-  display: inline-block; /* Ensures proper spacing */
+  display: inline-block;
 }
 
 nav a {
@@ -171,7 +171,7 @@ nav a:hover {
 .blog-img-2 {
   border-radius: 10px;
   float: right;
-  margin-left: 20px; /* Space between image and text */
+  margin-left: 20px;
   width: 200px;
 }
 .sub-blog-preview {
@@ -260,7 +260,7 @@ footer {
   .blog-img-2 {
     border-radius: 10px;
     float: right;
-    margin-left: 20px; /* Space between image and text */
+    margin-left: 20px;
     width: 30%;
   }
 }
